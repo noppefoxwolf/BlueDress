@@ -37,6 +37,8 @@ extension CVPixelBuffer {
         switch CVPixelBufferGetPixelFormatType(self) {
         case kCVPixelFormatType_420YpCbCr8BiPlanarFullRange:
             return true
+        case kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange:
+            return true
         default:
             return false
         }
