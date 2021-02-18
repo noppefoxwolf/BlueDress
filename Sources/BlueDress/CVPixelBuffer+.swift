@@ -33,13 +33,13 @@ extension CVPixelBuffer {
         }
     }
     
-    var is420YpCbCr8BiPlanarFullRange: Bool {
+    var isYpCbCr: Bool {
         switch CVPixelBufferGetPixelFormatType(self) {
         case kCVPixelFormatType_420YpCbCr8BiPlanarFullRange:
             return true
         case kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange:
             return true
-        default:
+        default: /// Unsupported
             return false
         }
     }

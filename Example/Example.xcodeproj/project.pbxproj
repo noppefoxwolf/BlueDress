@@ -13,6 +13,7 @@
 		D72060992599E5400047E697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72060972599E5400047E697 /* Main.storyboard */; };
 		D720609B2599E5410047E697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D720609A2599E5410047E697 /* Assets.xcassets */; };
 		D720609E2599E5410047E697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D720609C2599E5410047E697 /* LaunchScreen.storyboard */; };
+		D758B79925DE7B1B00C58751 /* PlaneIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758B79825DE7B1B00C58751 /* PlaneIndex.swift */; };
 		D76D6CC82599EBC1001813D6 /* MTLDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC12599EBC1001813D6 /* MTLDevice+.swift */; };
 		D76D6CC92599EBC1001813D6 /* CVReturnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC22599EBC1001813D6 /* CVReturnError.swift */; };
 		D76D6CCA2599EBC1001813D6 /* CVPixelBuffer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC32599EBC1001813D6 /* CVPixelBuffer+.swift */; };
@@ -43,6 +44,7 @@
 		D720609A2599E5410047E697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D720609D2599E5410047E697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D720609F2599E5410047E697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D758B79825DE7B1B00C58751 /* PlaneIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneIndex.swift; sourceTree = "<group>"; };
 		D76D6CC12599EBC1001813D6 /* MTLDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLDevice+.swift"; sourceTree = "<group>"; };
 		D76D6CC22599EBC1001813D6 /* CVReturnError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVReturnError.swift; sourceTree = "<group>"; };
 		D76D6CC32599EBC1001813D6 /* CVPixelBuffer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				D76D6CC42599EBC1001813D6 /* Resources */,
 				D76D6CC62599EBC1001813D6 /* CVMetalTexture+.swift */,
 				D76D6CC72599EBC1001813D6 /* BlueDress.swift */,
+				D758B79825DE7B1B00C58751 /* PlaneIndex.swift */,
 			);
 			path = BlueDress;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				D76D6CCC2599EBC1001813D6 /* CVMetalTexture+.swift in Sources */,
 				D72060962599E5400047E697 /* ViewController.swift in Sources */,
 				D76D6CCA2599EBC1001813D6 /* CVPixelBuffer+.swift in Sources */,
+				D758B79925DE7B1B00C58751 /* PlaneIndex.swift in Sources */,
 				D76D6CC92599EBC1001813D6 /* CVReturnError.swift in Sources */,
 				D76D6CCB2599EBC1001813D6 /* default.metal in Sources */,
 				D76D6CCD2599EBC1001813D6 /* BlueDress.swift in Sources */,

@@ -18,7 +18,7 @@ public class YCbCrImageBufferConverter {
     }
     
     public func convertToBGRA(imageBuffer: CVPixelBuffer) throws -> CVPixelBuffer {
-        guard imageBuffer.is420YpCbCr8BiPlanarFullRange else { fatalError() }
+        guard imageBuffer.isYpCbCr else { fatalError() }
         guard imageBuffer.planeCount == 2 else { fatalError() }
         
         try imageBuffer.lock()
@@ -26,20 +26,21 @@ public class YCbCrImageBufferConverter {
         
         let yTexture = try CVMetalTexture.make(
             sourceImage: imageBuffer,
-            planeIndex: 0,
+            planeIndex: PlaneIndex.y.rawValue,
             pixelFormat: .r8Unorm,
             textureCache: textureCache
         ).metalTexture!
         
         let cbcrTexture = try CVMetalTexture.make(
             sourceImage: imageBuffer,
-            planeIndex: 1,
+            planeIndex: PlaneIndex.cbcr.rawValue,
             pixelFormat: .rg8Unorm,
             textureCache: textureCache
         ).metalTexture!
         
         if outputPixelBuffer == nil {
-            outputPixelBuffer = try CVPixelBuffer.make(width: yTexture.width, height: yTexture.height)
+            /// ここでリサイズかけられる
+            outputPixelBuffer = try CVPixelBuffer.make(width: yTexture.height / 10, height: yTexture.width / 10)
         }
         
         if outputTexture == nil {
