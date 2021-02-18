@@ -40,7 +40,7 @@ public class YCbCrImageBufferConverter {
         
         if outputPixelBuffer == nil {
             /// ここでリサイズかけられる
-            outputPixelBuffer = try CVPixelBuffer.make(width: yTexture.height * 0.1, height: yTexture.width * 0.1)
+            outputPixelBuffer = try CVPixelBuffer.make(width: Int(Double(yTexture.height) * 0.1), height: Int(Double(yTexture.width) * 0.1))
         }
         
         if outputTexture == nil {
