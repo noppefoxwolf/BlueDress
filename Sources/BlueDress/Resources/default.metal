@@ -8,10 +8,10 @@ typedef struct {
 
 vertex ImageColorInOut vertexShader(uint vid [[ vertex_id ]]) {
     const ImageColorInOut vertices[4] = {
-        { float4(-1.0f, -1.0f, 0.0f, 1.0f), float2(0.0f, 1.0f) },
-        { float4(1.0f, -1.0f, 0.0f, 1.0f), float2(1.0f, 1.0f) },
-        { float4(-1.0f, 1.0f, 0.0f, 1.0f), float2(0.0f, 0.0f) },
-        { float4(1.0f, 1.0f, 0.0f, 1.0f), float2(1.0f, 0.0f) },
+        { float4(-1, -1, 0, 1), float2(0, 1) },
+        { float4(1, -1, 0, 1), float2(1, 1) },
+        { float4(-1, 1, 0, 1), float2(0, 0) },
+        { float4(1, 1, 0, 1), float2(1, 0) },
     };
     return vertices[vid];
 }
