@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,13 +13,7 @@
 		D72060992599E5400047E697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72060972599E5400047E697 /* Main.storyboard */; };
 		D720609B2599E5410047E697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D720609A2599E5410047E697 /* Assets.xcassets */; };
 		D720609E2599E5410047E697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D720609C2599E5410047E697 /* LaunchScreen.storyboard */; };
-		D758B79925DE7B1B00C58751 /* PlaneIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758B79825DE7B1B00C58751 /* PlaneIndex.swift */; };
-		D76D6CC82599EBC1001813D6 /* MTLDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC12599EBC1001813D6 /* MTLDevice+.swift */; };
-		D76D6CC92599EBC1001813D6 /* CVReturnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC22599EBC1001813D6 /* CVReturnError.swift */; };
-		D76D6CCA2599EBC1001813D6 /* CVPixelBuffer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC32599EBC1001813D6 /* CVPixelBuffer+.swift */; };
-		D76D6CCB2599EBC1001813D6 /* default.metal in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC52599EBC1001813D6 /* default.metal */; };
-		D76D6CCC2599EBC1001813D6 /* CVMetalTexture+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC62599EBC1001813D6 /* CVMetalTexture+.swift */; };
-		D76D6CCD2599EBC1001813D6 /* BlueDress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D6CC72599EBC1001813D6 /* BlueDress.swift */; };
+		DCBFCA792A033C96001A9B26 /* BlueDress in Frameworks */ = {isa = PBXBuildFile; productRef = DCBFCA782A033C96001A9B26 /* BlueDress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,13 +38,7 @@
 		D720609A2599E5410047E697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D720609D2599E5410047E697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D720609F2599E5410047E697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D758B79825DE7B1B00C58751 /* PlaneIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneIndex.swift; sourceTree = "<group>"; };
-		D76D6CC12599EBC1001813D6 /* MTLDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLDevice+.swift"; sourceTree = "<group>"; };
-		D76D6CC22599EBC1001813D6 /* CVReturnError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVReturnError.swift; sourceTree = "<group>"; };
-		D76D6CC32599EBC1001813D6 /* CVPixelBuffer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+.swift"; sourceTree = "<group>"; };
-		D76D6CC52599EBC1001813D6 /* default.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = default.metal; sourceTree = "<group>"; };
-		D76D6CC62599EBC1001813D6 /* CVMetalTexture+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVMetalTexture+.swift"; sourceTree = "<group>"; };
-		D76D6CC72599EBC1001813D6 /* BlueDress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueDress.swift; sourceTree = "<group>"; };
+		DCBFCA772A033C33001A9B26 /* BlueDress */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BlueDress; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBFCA792A033C96001A9B26 /* BlueDress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +56,7 @@
 		D72060852599E5400047E697 = {
 			isa = PBXGroup;
 			children = (
+				DCBFCA762A033C33001A9B26 /* Packages */,
 				D72060902599E5400047E697 /* Example */,
 				D720608F2599E5400047E697 /* Products */,
 				D72060C62599E5A70047E697 /* Frameworks */,
@@ -84,7 +74,6 @@
 		D72060902599E5400047E697 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				D76D6CBF2599EBC1001813D6 /* Sources */,
 				D72060912599E5400047E697 /* AppDelegate.swift */,
 				D72060932599E5400047E697 /* SceneDelegate.swift */,
 				D72060952599E5400047E697 /* ViewController.swift */,
@@ -103,35 +92,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D76D6CBF2599EBC1001813D6 /* Sources */ = {
+		DCBFCA762A033C33001A9B26 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				D76D6CC02599EBC1001813D6 /* BlueDress */,
+				DCBFCA772A033C33001A9B26 /* BlueDress */,
 			);
-			name = Sources;
-			path = ../../Sources;
-			sourceTree = "<group>";
-		};
-		D76D6CC02599EBC1001813D6 /* BlueDress */ = {
-			isa = PBXGroup;
-			children = (
-				D76D6CC12599EBC1001813D6 /* MTLDevice+.swift */,
-				D76D6CC22599EBC1001813D6 /* CVReturnError.swift */,
-				D76D6CC32599EBC1001813D6 /* CVPixelBuffer+.swift */,
-				D76D6CC42599EBC1001813D6 /* Resources */,
-				D76D6CC62599EBC1001813D6 /* CVMetalTexture+.swift */,
-				D76D6CC72599EBC1001813D6 /* BlueDress.swift */,
-				D758B79825DE7B1B00C58751 /* PlaneIndex.swift */,
-			);
-			path = BlueDress;
-			sourceTree = "<group>";
-		};
-		D76D6CC42599EBC1001813D6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D76D6CC52599EBC1001813D6 /* default.metal */,
-			);
-			path = Resources;
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +117,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				DCBFCA782A033C96001A9B26 /* BlueDress */,
+			);
 			productName = Example;
 			productReference = D720608E2599E5400047E697 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -205,16 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76D6CCC2599EBC1001813D6 /* CVMetalTexture+.swift in Sources */,
 				D72060962599E5400047E697 /* ViewController.swift in Sources */,
-				D76D6CCA2599EBC1001813D6 /* CVPixelBuffer+.swift in Sources */,
-				D758B79925DE7B1B00C58751 /* PlaneIndex.swift in Sources */,
-				D76D6CC92599EBC1001813D6 /* CVReturnError.swift in Sources */,
-				D76D6CCB2599EBC1001813D6 /* default.metal in Sources */,
-				D76D6CCD2599EBC1001813D6 /* BlueDress.swift in Sources */,
 				D72060922599E5400047E697 /* AppDelegate.swift in Sources */,
 				D72060942599E5400047E697 /* SceneDelegate.swift in Sources */,
-				D76D6CC82599EBC1001813D6 /* MTLDevice+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +378,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCBFCA782A033C96001A9B26 /* BlueDress */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlueDress;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D72060862599E5400047E697 /* Project object */;
 }
