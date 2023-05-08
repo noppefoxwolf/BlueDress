@@ -11,7 +11,7 @@ import CoreVideo
 
 extension MTLDevice {
     func makeModuleLibrary() throws -> MTLLibrary {
-        let url = Bundle.main.url(forResource: "default", withExtension: "metallib")!
+        let url = Bundle.module.url(forResource: "default", withExtension: "metallib")!
         return try self.makeLibrary(URL: url)
     }
     

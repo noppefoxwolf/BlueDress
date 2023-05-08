@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import BlueDress
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     let camera = Camera()
